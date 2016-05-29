@@ -1,1 +1,1 @@
-基于 webpack 的网站调试及构建方案。
+技术栈：webpack、sass。
