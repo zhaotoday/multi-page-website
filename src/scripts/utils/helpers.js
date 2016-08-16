@@ -1,5 +1,5 @@
 var alertSomething = function () {
-  alert('something');
+  alert('something')
 }
 
 module.exports = {
