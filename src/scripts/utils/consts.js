@@ -6,7 +6,7 @@ var DEVELOPMENT = 'DEVELOPMENT'
 var PRODUCTION = 'PRODUCTION'
 
 // 当前环境
-const ENV = (function () {
+var ENV = (function () {
   if (HOST === 'localhost:8080') {
     return DEVELOPMENT
   } else {
