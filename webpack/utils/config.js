@@ -13,12 +13,7 @@ const config = {
     loaders: [
       {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract('style', 'css!sass')
-      },
-      {
-        test: /\.js?$/,
-        exclude: /node_modules/,
-        loader: 'babel'
+        loader: ExtractTextPlugin.extract('style', 'css!sass!postcss')
       },
       {
         test: /\.html$/,
@@ -30,6 +25,22 @@ const config = {
       }
     ]
   },
+  postcss: [
+    require('postcss-font-magician')(),
+    require('cssnano')({
+      filterPlugins: false,
+      sourcemap: true,
+      autoprefixer: {
+        add: true,
+        remove: true,
+        browsers: ['last 2 versions']
+      },
+      safe: true,
+      discardComments: {
+        removeAll: true
+      }
+    })
+  ],
   plugins: [
     new ExtractTextPlugin(`${consts.STYLES}[name].css`),
     ...helpers.getPlugins(consts.PAGES)

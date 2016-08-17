@@ -3,3 +3,10 @@ $bg-color: yellow;
 body {
   background-color: $bg-color;
 }
+
+.test {
+  width: 100px;
+  height: 100px;
+  background-color: #ffec7e;
+  display: flex;
+}

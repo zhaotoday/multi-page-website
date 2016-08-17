@@ -7,6 +7,9 @@ module.exports = {
   module: {
     loaders: config.module.loaders
   },
+  postcss: function () {
+    return config.postcss
+  },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     ...config.plugins
