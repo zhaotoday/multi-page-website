@@ -19,7 +19,7 @@
       }
     },
     "build": {
-      "command": "npm run clean && webpack --config webpack --progress --colors",
+      "command": "npm run clean && webpack -p --config webpack --define process.env.NODE_ENV='\"production\"' --progress --profile --colors",
       "env": {
         "NODE_ENV": "production"
       }
