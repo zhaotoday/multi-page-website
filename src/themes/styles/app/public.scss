@@ -1,0 +1,157 @@
+@import "node_modules/compass-mixins/lib/compass/reset";
+@import "../utils/vars";
+
+/* global */
+body {
+  font-family: "微软雅黑";
+  font-size: $font-size;
+  background-color: $body-bg-color;
+  min-width: $page-width;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* classes */
+.fix-center {
+  width: $page-width;
+  margin: 0 auto;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-right {
+  right: 0;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.block {
+  display: block;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.first-item {
+  margin-left: 0 !important;
+}
+
+@font-face {
+  font-family: "iconfont";
+  src: url("http://at.alicdn.com/t/font_1471765442_753068.eot"); /* IE9*/
+  src: url("http://at.alicdn.com/t/font_1471765442_753068.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("http://at.alicdn.com/t/font_1471765442_753068.woff") format("woff"), /* chrome、firefox */
+  url("http://at.alicdn.com/t/font_1471765442_753068.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("http://at.alicdn.com/t/font_1471765442_753068.svg#iconfont") format("svg"); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-app:before {
+  content: "\e604";
+}
+
+.icon-website:before {
+  content: "\e601";
+}
+
+.icon-domain:before {
+  content: "\e602";
+}
+
+.icon-sem:before {
+  content: "\e603";
+}
+
+/* 顶部栏 */
+.top-bar {
+  height: 36px;
+  line-height: 36px;
+  background-color: #0298e3;
+  color: white;
+}
+
+/* 菜单栏 */
+.nav-bar {
+  height: 80px;
+  line-height: 80px;
+  background-color: $primary-color;
+
+  /* logo */
+  .logo {
+    display: block;
+    top: 25px;
+    width: 130px;
+    height: 25px;
+    line-height: 25px;
+    color: white;
+    font-size: 20px;
+    text-indent: 40px;
+
+    background: url("../../images/logo.png") no-repeat;
+  }
+
+  /* 导航菜单 */
+  .nav {
+    a {
+      font-size: 16px;
+      margin-left: 30px;
+      color: white;
+      padding-bottom: 3px;
+
+      &.active {
+        border-bottom: 1px solid white;
+      }
+    }
+  }
+}
+
+.panel {
+  margin-top: 30px;
+
+  &-header {
+    text-align: center;
+    margin-bottom: 20px;
+
+    h2 {
+      border-bottom: 1px solid $primary-color;
+      font-size: 20px;
+      padding-bottom: 15px;
+      display: inline-block;
+    }
+  }
+}
+
+.footer {
+  margin-top: 10px;
+  background-color: $primary-color;
+  padding: 35px 0 35px 0;
+  color: white;
+  line-height: 200%;
+  text-align: center;
+}
