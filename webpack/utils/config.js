@@ -17,7 +17,7 @@ const config = {
       },
       {
         test: /\.html$/,
-        loader: 'html?-minimize'
+        loader: 'html?interpolate'
       },
       {
         test: /\.(png|jpg)$/,

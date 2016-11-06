@@ -15,12 +15,12 @@ const getEntry = (pages) => {
 const getPlugins = (pages) => {
   const plugins = []
 
-  pages.map((item) => {
+  pages.map((page) => {
     plugins.push(
       new HtmlWebpackPlugin({
-        filename: `./${item}.html`,
-        template: `./${item}.html`,
-        inject: false
+        filename: `./${page}.html`,
+        template: `./src/templates/${page}.html`,
+        inject: true
       })
     )
   })
