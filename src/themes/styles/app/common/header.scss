@@ -1,0 +1,55 @@
+@import "../../utils/vars";
+@import "../../utils/mixins";
+
+$height: 80px;
+$nav-active-color: #298eff;
+
+// header
+.header {
+  @include middle($height);
+  top: 0;
+  left: 0;
+  right: 0;
+
+  // 为了兼容 IE8
+  .opacity-bg {
+    background-color: $header-bg-color;
+    opacity: 0.5;
+    width: 100%;
+    height: $height;
+  }
+
+  // logo
+  .logo {
+    background: gray;
+    width: 400px;
+    height: $height;
+  }
+
+  // 导航
+  .nav {
+    a {
+      box-sizing: border-box;
+      display: inline-block;
+      float: left;
+      font-size: 16px;
+      padding-left: 50px;
+      padding-right: 50px;
+      @include middle($height);
+      margin-left: 30px;
+      color: white;
+
+      &.active {
+        color: $nav-active-color;
+        border-bottom: 3px solid $nav-active-color;
+      }
+    }
+  }
+
+  // 语言切换
+  .locale {
+    padding: 10px 20px;
+    line-height: 14px;
+    border: 1px solid #3b3c37;
+  }
+}

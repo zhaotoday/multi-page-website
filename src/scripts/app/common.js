@@ -1,2 +1,2 @@
-require('styles/app/common.scss')
+require('styles/app/common/index.scss')
 

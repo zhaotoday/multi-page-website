@@ -1,0 +1,54 @@
+@import "./vars";
+
+// 定宽居中
+.fix-center {
+  width: $page-width;
+  margin: 0 auto;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute-r {
+  right: 0;
+}
+
+.text-r {
+  text-align: right;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.float-l {
+  float: left;
+}
+
+.float-r {
+  float: right;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
