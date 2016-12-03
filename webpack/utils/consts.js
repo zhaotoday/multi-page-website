@@ -2,7 +2,7 @@ const SRC = 'src/'
 const DIST = 'dist/'
 const SCRIPTS = 'scripts/app/'
 const STYLES = 'themes/styles/app/'
-const THEME = 'src/themes'
+const THEMES = 'src/themes'
 const PAGES = ['home']
 const CDN = '/'
 
@@ -10,7 +10,7 @@ module.exports = {
   SRC,
   DIST,
   SCRIPTS,
-  THEME,
+  THEMES,
   STYLES,
   PAGES,
   CDN

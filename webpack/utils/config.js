@@ -17,7 +17,7 @@ const config = {
       },
       {
         test: /\.html$/,
-        loader: 'html?interpolate'
+        loader: 'html?interpolate&minimize=false'
       },
       {
         test: /\.(png|jpg)$/,
@@ -47,7 +47,7 @@ const config = {
   ],
   resolve: {
     root: __dirname,
-    modulesDirectories: ['src', consts.THEME, 'node_modules'],
+    modulesDirectories: ['src', consts.THEMES, 'node_modules'],
     extensions: ['', '.js', '.html', '.scss']
   }
 }
