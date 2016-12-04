@@ -10,6 +10,7 @@ $nav-active-color: #298eff;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1000;
 
   // 为了兼容 IE8
   .opacity-bg {
@@ -26,8 +27,9 @@ $nav-active-color: #298eff;
     height: $height;
   }
 
-  // 导航
+  // 导航栏
   .nav {
+    // 导航菜单
     a {
       box-sizing: border-box;
       display: inline-block;
@@ -39,6 +41,7 @@ $nav-active-color: #298eff;
       margin-left: 30px;
       color: white;
 
+      // 导航菜单激活状态
       &.active {
         color: $nav-active-color;
         border-bottom: 3px solid $nav-active-color;
