@@ -2,33 +2,52 @@
 @import "../../utils/mixins";
 
 $width: 1920px;
-$height: 500px;
+$height: 800px;
 
 // 滑动广告
 .slider {
   width: 100%;
   overflow: hidden;
+  text-align: center;
 
   // 滑动广告图片
   &-images {
     li {
       @include absolute-center(100%, $width);
-      height: 500px;
+      height: $height;
 
       img {
         display: block;
         width: $width;
-        height: 500px;
-
-        &:first-child {
-          z-index: 999;
-        }
+        height: $height;
       }
     }
   }
 
   // 滑动广告索引按钮
   &-indexes {
-    margin-top: 600px;
+    position: relative;
+    display: inline-block;
+    padding: 3px 16px;
+    line-height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, .6);
+    margin-top: 762px;
+
+    li {
+      display: inline-block;
+      background-image: url("../../../images/home/slider/index.png");
+      width: 8px;
+      height: 8px;
+      margin-left: 2px;
+      margin-right: 2px;
+      cursor: pointer;
+      
+      &.active {
+        background-image: url("../../../images/home/slider/index-active.png");
+        width: 20px;
+      }
+    }
   }
 }
