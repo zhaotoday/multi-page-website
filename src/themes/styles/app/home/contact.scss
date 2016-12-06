@@ -1,0 +1,23 @@
+.home-contact {
+  background: url("../../../images/home/contact/bg.jpg") center no-repeat;
+  height: 761px;
+
+  dl {
+    dt {
+      background-image: url("../../../images/home/contact/title.png");
+      @include center(182px);
+      height: 189px;
+    }
+
+    dd {
+      padding-top: 95px;
+      font-size: 20px;
+      @include center(890px);
+      line-height: 180%;
+
+      p {
+        padding-bottom: 10px;
+      }
+    }
+  }
+}

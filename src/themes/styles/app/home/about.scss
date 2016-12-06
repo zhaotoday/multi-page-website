@@ -1,0 +1,25 @@
+@import "../../utils/mixins";
+
+.home-about {
+  background: url("../../../images/home/about/bg.jpg") center no-repeat;
+  height: 693px;
+
+  dl {
+    dt {
+      background-image: url("../../../images/home/about/title.png");
+      @include center(184px);
+      height: 192px;
+    }
+
+    dd {
+      padding-top: 95px;
+      font-size: 20px;
+      @include center(890px);
+      line-height: 180%;
+
+      p {
+        padding-bottom: 10px;
+      }
+    }
+  }
+}

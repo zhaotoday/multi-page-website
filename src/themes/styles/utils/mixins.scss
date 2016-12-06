@@ -26,3 +26,26 @@
   left: $parent-width / 2;
   margin-left: -$self-width / 2;
 }
+
+/**
+ * 块化链接
+ * @param $width {string} 宽度
+ * @param $height {string} 高度
+ */
+@mixin block-link($width, $height) {
+  display: block;
+  text-decoration: none;
+  width: $width;
+  height: $height;
+}
+
+/**
+ * 块化图片
+ * @param $width {string} 宽度
+ * @param $height {string} 高度
+ */
+@mixin block-img($width, $height) {
+  display: block;
+  width: $width;
+  height: $height;
+}
