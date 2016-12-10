@@ -10,13 +10,66 @@
     }
 
     dd {
-      padding-top: 95px;
-      font-size: 20px;
-      @include center(890px);
-      line-height: 180%;
+      padding-top: 25px;
+      @include center(1100px);
+      color: white;
 
-      p {
-        padding-bottom: 10px;
+      .words {
+        @include center(456px);
+        font-size: 16px;
+        text-align: center;
+        line-height: 180%;
+      }
+
+      .methods {
+        padding-top: 60px;
+        height: 280px;
+
+        li {
+          float: left;
+          width: 366px;
+          text-align: center;
+          background-repeat: no-repeat;
+          background-position: center top;
+          font-size: 20px;
+          line-height: 180%;
+          padding-top: 138px;
+
+          &.address {
+            background-image: url("../../../images/home/contact/address.png");
+          }
+
+          &.email {
+            background-image: url("../../../images/home/contact/email.png");
+          }
+
+          &.tel {
+            background-image: url("../../../images/home/contact/tel.png");
+          }
+        }
+      }
+
+      .btn-join {
+        @include block-link(286px, 84px);
+        line-height: 84px;
+        font-size: 24px;
+        color: #2a8fff;
+        text-align: center;
+        border-radius: 42px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid #2a8fff;
+
+        span {
+          display: inline-block;
+          width: 22px;
+          height: 22px;
+          overflow: hidden;
+          position: relative;
+          top: 3px;
+          background-image: url("../../../images/home/contact/join.png");
+          background-repeat: no-repeat;
+        }
       }
     }
   }
