@@ -1,5 +1,12 @@
 require('styles/app/home/index.scss')
+require('../$/plugins/nav')
 require('../$/plugins/slider')
+
+$('#nav').find('li:first-child').addClass('active').end().onePageNav({
+  currentClass: 'active',
+  scrollThreshold: 0.5,
+  scrollSpeed: 300
+})
 
 $('#ad').slider({
   contentCls: 'slider-images',
@@ -20,5 +27,7 @@ $('#commodity').slider({
   triggerType: 'click',
   easing: 'easeOut',
   inEndEffect: 'none',
-  steps: 3
+  steps: 3,
+  delay: 2500,
+  duration: 700
 })

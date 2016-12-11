@@ -65,12 +65,14 @@
     }
 
     .slider-wrap {
-      overflow: hidden;
       @include center(1000px);
+      height: 562px;
+      overflow: hidden;
 
       .slider {
         .slider-images {
           li {
+            width: 1000px;
             float: left;
 
             img {

@@ -1,0 +1,82 @@
+@import "../../utils/mixins";
+
+.job {
+  @include center(1200px);
+  padding-bottom: 300px;
+
+  .banner {
+    background-image: url("../../../images/job/banner.jpg");
+    height: 174px;
+    margin-top: 74px;
+    margin-bottom: 70px;
+  }
+
+  h1 {
+    font-size: 36px;
+    padding-bottom: 40px;
+  }
+
+  h2 {
+    color: #666666;
+    height: 54px;
+    line-height: 54px;
+    border-bottom: 1px solid #dddddd;
+
+    .time {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  .content {
+    p {
+      padding-top: 30px;
+      line-height: 180%;
+      color: #666666;
+
+      &.last {
+        padding-top: 40px;
+      }
+    }
+  }
+
+  .job-list {
+    width: 250px;
+    float: left;
+    margin-right: 66px;
+
+    dt {
+      font-size: 24px;
+      @include middle(50px);
+      border-bottom: 1px solid #dddddd;
+
+      span {
+        display: inline-block;
+        padding-right: 5px;
+        height: 50px;
+        border-bottom: 3px solid #2a8fff;
+        position: relative;
+        bottom: 2px;
+      }
+    }
+
+    dd {
+      padding-top: 15px;
+
+      li {
+        @include middle(44px);
+        background: url("../../../images/job/arrow.png") no-repeat 0 16px;
+        text-indent: 15px;
+
+        a {
+          color: #333333;
+        }
+      }
+    }
+
+    &.last {
+      margin-right: 0;
+    }
+  }
+}
