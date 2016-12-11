@@ -1,7 +1,14 @@
 require('styles/app/home/index.scss')
 require('../$/plugins/slider')
-/*
- new $.Slider('#ad', {
- interval: 3000
- })
- */
+$('#ad').slider({
+  contentCls: 'slider-images',
+  navCls: 'slider-indexes',
+  animate: true,
+  triggerType: 'click',
+  auto: true,
+  delay: 2500,
+  duration: 700,
+  keyboardAble: true,
+  inEndEffect: 'cycle',
+  easing: 'easeOut'
+});

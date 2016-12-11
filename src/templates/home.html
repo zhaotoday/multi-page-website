@@ -8,20 +8,28 @@
 </head>
 <body>
 ${require('./commons/header.html')}
-<div id="ad" class="ad-slider">
-  <ol class="slider-images">
-    <li>
-      <img src="../themes/images/home/slider/1.jpg">
-    </li>
-  </ol>
-  <ol class="slider-indexes">
-    <li class="active"></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ol>
+<div id="ad" class="ad relative">
+  <div class="ad-slider">
+    <ol class="slider-images">
+      <li>
+        <img src="../themes/images/home/slider/1.jpg">
+      </li>
+      <li>
+        <img src="../themes/images/home/slider/2.jpg">
+      </li>
+      <li>
+        <img src="../themes/images/home/slider/3.jpg">
+      </li>
+    </ol>
+    <ol class="slider-indexes">
+      <li class="active"></li>
+      <li></li>
+      <li></li>
+    </ol>
+  </div>
 </div>
-<div class="home-about">
+<div class="home-about relative">
+  <div id="to-about" class="nav-hash"></div>
   <dl class="fix-center">
     <dt></dt>
     <dd>
@@ -31,7 +39,8 @@ ${require('./commons/header.html')}
     </dd>
   </dl>
 </div>
-<div class="home-commodity">
+<div id="commodity" class="home-commodity relative">
+  <div id="to-commodity" class="nav-hash"></div>
   <dl>
     <dt></dt>
     <dd class="commodity-slider relative">
@@ -62,7 +71,8 @@ ${require('./commons/header.html')}
     </dd>
   </dl>
 </div>
-<div class="home-contact">
+<div id="contact" class="home-contact relative">
+  <div id="to-contact" class="nav-hash"></div>
   <dl>
     <dt></dt>
     <dd>

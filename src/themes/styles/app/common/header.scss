@@ -25,22 +25,27 @@ $nav-active-color: #298eff;
   .nav {
     margin-left: 126px;
 
-    // 导航菜单
-    a {
-      box-sizing: border-box;
-      display: inline-block;
+    li {
       float: left;
-      font-size: 16px;
-      padding-left: 30px;
-      padding-right: 30px;
-      @include middle($height);
-      margin-right: 30px;
-      color: white;
+
+      // 导航菜单
+      a {
+        box-sizing: border-box;
+        display: inline-block;
+        font-size: 16px;
+        padding-left: 30px;
+        padding-right: 30px;
+        @include middle($height);
+        margin-right: 30px;
+        color: white;
+      }
 
       // 导航菜单激活状态
       &.active {
-        color: $nav-active-color;
-        border-bottom: 2px solid $nav-active-color;
+        a {
+          color: $nav-active-color;
+          border-bottom: 2px solid $nav-active-color;
+        }
       }
     }
   }
