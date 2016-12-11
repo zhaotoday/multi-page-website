@@ -8,11 +8,62 @@
   <link href="themes/styles/app/common.css" rel="stylesheet">
   <link href="themes/styles/app/commodity.css" rel="stylesheet">
 </head>
-<body>
+<body class="body-padding">
 ${require('./commons/header.html')}
-11111
+<div class="commodity">
+  <img class="icon" src="../themes/images/commodity/demo.png">
+  <h1 class="title">航海纪元</h1>
+  <div class="actions">
+    <a class="app-store" href="#"></a>
+    <a class="google-play" href="#"></a>
+    <a class="home-page" href="#">游戏官网</a>
+  </div>
+  <div class="content">
+    <p>　　《航海纪元》还原16世纪大航海时代，再现传奇船长掌舵风帆，决战海上的热血场景。当你化身船长，驾驭着精工还原的历史名舰驰骋大海，仿佛穿越时间，掉落在16世纪的甲板上。</p>
+    <p>　　海上冒险随时收受到海盗的威胁，《航海纪元》精心还原恢弘海战画面与经典海战玩法，致敬航海经典。一场船长与船长的较量，名舰与名舰的对决，炮火纷飞中让你感受海上争霸的激情与热血的同时，也感受到一种情怀的回归。</p>
+  </div>
+  <div id="commodity-images" class="commodity-images clearfix">
+    <div class="slider-wrap">
+      <ul class="slider-images">
+        <li>
+          <img src="../themes/images/commodity/slider/1.jpg">
+        </li>
+        <li>
+          <img src="../themes/images/commodity/slider/2.jpg">
+        </li>
+        <li>
+          <img src="../themes/images/commodity/slider/3.jpg">
+        </li>
+      </ul>
+      <ul class="slider-dir">
+        <li class="slider-left"></li>
+        <li class="slider-right"></li>
+      </ul>
+    </div>
+  </div>
+  <div class="more">
+    <dl class="fix-center">
+      <dt></dt>
+      <dd>
+        <ul class="game clearfix">
+          <li class="float-l">
+            <img src="../themes/images/commodity/more-icon.png">
+          </li>
+          <li>
+            <h2>航海归来</h2>
+            <p>
+              《航海归来》是一款环球探险航海手游，玩家化身传奇船长扬帆远航，在海上征途中完成全球贸易，海上掠夺，
+              抗击海盗，争夺港口。全民海战，一触即发！加入《航海归来》，成就航海之王！
+            </p>
+            <a href="#">查 看</a>
+          </li>
+        </ul>
+      </dd>
+    </dl>
+  </div>
+</div>
+${require('./commons/footer.html')}
 <script src="scripts/app/common.js"></script>
 <script src="scripts/app/commodity.js"></script>
-${require('./commons/footer.html')}
 </body>
 </html>

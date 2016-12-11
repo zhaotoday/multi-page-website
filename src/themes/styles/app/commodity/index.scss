@@ -1,0 +1,195 @@
+@import "../../utils/mixins";
+
+.commodity {
+  .icon {
+    @include block-img(184px, 184px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 52px;
+  }
+
+  .title {
+    font-size: 40px;
+    padding-top: 25px;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+
+  .actions {
+    text-align: center;
+
+    a {
+      display: inline-block;
+      margin-left: 8px;
+      margin-right: 8px;
+      height: 50px;
+      overflow: hidden;
+
+      &.app-store {
+        background-image: url("../../../images/commodity/buttons/app-store.png");
+        width: 169px;
+      }
+
+      &.google-play {
+        background-image: url("../../../images/commodity/buttons/google-play.png");
+        width: 169px;
+      }
+
+      &.home-page {
+        color: white;
+        font-size: 16px;
+        background-image: url("../../../images/commodity/buttons/home-page.png");
+        width: 173px;
+        line-height: 50px;
+        text-indent: 30px;
+      }
+    }
+  }
+
+  .content {
+    @include center(996px);
+    line-height: 180%;
+    padding-top: 46px;
+    padding-bottom: 46px;
+    color: #666666;
+    font-size: 16px;
+  }
+
+  .commodity-images {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #e7e7e7;
+
+    .nav {
+      display: none;
+    }
+
+    .slider-wrap {
+      overflow: hidden;
+      @include center(1000px);
+
+      .slider {
+        .slider-images {
+          li {
+            float: left;
+
+            img {
+              @include block-img(1000px, 562px);
+            }
+          }
+        }
+      }
+
+      .slider-dir {
+        li {
+          position: absolute;
+          width: 40px;
+          height: 75px;
+          cursor: pointer;
+          top: 230px;
+
+          &.slider-left {
+            background-image: url("../../../images/home/commodity/left.png");
+            left: 50%;
+            margin-left: -620px;
+
+            &.disabled {
+              cursor: text;
+              background-image: url("../../../images/home/commodity/left-disabled.png");
+            }
+          }
+
+          &.slider-right {
+            background-image: url("../../../images/home/commodity/right.png");
+            right: 50%;
+            margin-right: -620px;
+
+            &.disabled {
+              cursor: text;
+              background-image: url("../../../images/home/commodity/right-disabled.png");
+            }
+          }
+        }
+      }
+
+      .slider-dir {
+        li {
+          position: absolute;
+          width: 40px;
+          height: 75px;
+          cursor: pointer;
+          top: 245px;
+
+          &.slider-left {
+            background-image: url("../../../images/home/commodity/left.png");
+            left: 50%;
+            margin-left: -480px;
+
+            &.disabled {
+              cursor: text;
+              background-image: url("../../../images/home/commodity/left-disabled.png");
+            }
+          }
+
+          &.slider-right {
+            background-image: url("../../../images/home/commodity/right.png");
+            right: 50%;
+            margin-right: -480px;
+
+            &.disabled {
+              cursor: text;
+              background-image: url("../../../images/home/commodity/right-disabled.png");
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .more {
+    dl {
+      dt {
+        background-image: url("../../../images/commodity/title.png");
+        @include center(184px);
+        height: 90px;
+      }
+
+      dd {
+        .game {
+          @include center(900px);
+          margin-top: 65px;
+          margin-bottom: 80px;
+
+          li {
+            img {
+              @include block-img(160px, 160px);
+              margin-right: 20px;
+            }
+
+            h2 {
+              font-size: 30px;
+            }
+
+            p {
+              padding-top: 18px;
+              padding-bottom: 15px;
+              color: #666666;
+              line-height: 180%;
+            }
+
+            a {
+              font-size: 16px;
+              display: inline-block;
+              width: 140px;
+              @include middle(44px);
+              text-align: center;
+              color: #2a8fff;
+              border: 1px solid #2a8fff;
+              border-radius: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
