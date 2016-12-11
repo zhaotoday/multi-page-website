@@ -15,48 +15,49 @@
     }
 
     dd {
-      padding-top: 105px;
-
-      .slider-images {
+      .slider-images-wrap {
+        padding-top: 105px;
         @include center(1164px);
         overflow: hidden;
 
-        li {
-          overflow: hidden;
-          width: 388px;
-          float: left;
-          color: white;
-          text-align: center;
-
-          img {
-            @include block-img(218px, 218px);
-            margin-left: auto;
-            margin-right: auto;
-          }
-
-          h2 {
-            font-size: 30px;
-            padding-top: 15px;
-            padding-bottom: 23px;
-          }
-
-          p {
-            font-size: 14px;
-            @include center(320px);
-            height: 143px;
-            line-height: 160%;
-          }
-
-          .btn-view {
-            @include block-link(185px, 60px);
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-            line-height: 60px;
-            font-size: 18px;
+        .slider-images {
+          li {
+            overflow: hidden;
+            width: 388px;
+            float: left;
             color: white;
-            border-radius: 30px;
-            border: 1px solid white;
+            text-align: center;
+
+            img {
+              @include block-img(218px, 218px);
+              margin-left: auto;
+              margin-right: auto;
+            }
+
+            h2 {
+              font-size: 30px;
+              padding-top: 15px;
+              padding-bottom: 23px;
+            }
+
+            p {
+              font-size: 14px;
+              @include center(320px);
+              height: 143px;
+              line-height: 160%;
+            }
+
+            .btn-view {
+              @include block-link(185px, 60px);
+              margin-left: auto;
+              margin-right: auto;
+              text-align: center;
+              line-height: 60px;
+              font-size: 18px;
+              color: white;
+              border-radius: 30px;
+              border: 1px solid white;
+            }
           }
         }
       }
@@ -68,9 +69,9 @@
           height: 75px;
           cursor: pointer;
           top: 230px;
-          
+
           &.slider-left {
-            background-image: url("../../../images/home/commodity/left-disabled.png");
+            background-image: url("../../../images/home/commodity/left.png");
             left: 50%;
             margin-left: -620px;
 
@@ -84,6 +85,11 @@
             background-image: url("../../../images/home/commodity/right.png");
             right: 50%;
             margin-right: -620px;
+
+            &.disabled {
+              cursor: text;
+              background-image: url("../../../images/home/commodity/right-disabled.png");
+            }
           }
         }
       }
