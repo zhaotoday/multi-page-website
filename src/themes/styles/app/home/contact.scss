@@ -1,6 +1,7 @@
 .home-contact {
   background: url("../../../images/home/contact/bg.jpg") center no-repeat;
   height: 761px;
+  text-align: center;
 
   dl {
     dt {
@@ -70,6 +71,25 @@
           background-image: url("../../../images/home/contact/join.png");
           background-repeat: no-repeat;
         }
+      }
+    }
+  }
+}
+
+.en-and-ar {
+  .home-contact {
+    dl {
+      dt {
+        position: relative;
+        display: inline-block;
+        background-image: none;
+        background-color: white;
+        color: #2a8fff;
+        font-size: 36px;
+        width: auto;
+        height: auto;
+        padding: 60px 30px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
       }
     }
   }

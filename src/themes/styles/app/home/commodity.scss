@@ -6,6 +6,11 @@
   margin-left: auto;
   margin-right: auto;
   height: 920px;
+  text-align: center;
+
+  .nav {
+    display: none;
+  }
 
   dl {
     dt {
@@ -92,6 +97,25 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+.en-and-ar {
+  .home-commodity {
+    dl {
+      dt {
+        position: relative;
+        display: inline-block;
+        background-image: none;
+        background-color: white;
+        color: #2a8fff;
+        font-size: 36px;
+        width: auto;
+        height: auto;
+        padding: 60px 30px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
       }
     }
   }

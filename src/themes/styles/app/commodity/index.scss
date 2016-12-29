@@ -149,6 +149,8 @@
   }
 
   .more {
+    text-align: center;
+
     dl {
       dt {
         background-image: url("../../../images/commodity/title.png");
@@ -158,6 +160,7 @@
 
       dd {
         .game {
+          text-align: left;
           @include center(900px);
           margin-top: 65px;
           margin-bottom: 80px;
@@ -191,6 +194,25 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+.en-and-ar {
+  .more {
+    dl {
+      dt {
+        position: relative;
+        display: inline-block;
+        background-image: none;
+        background-color: #64a8f3;
+        color: white;
+        font-size: 30px;
+        width: auto;
+        height: auto;
+        padding: 25px 35px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
       }
     }
   }

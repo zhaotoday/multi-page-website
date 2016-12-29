@@ -3,6 +3,7 @@
 .home-about {
   background: url("../../../images/home/about/bg.jpg") center no-repeat;
   height: 693px;
+  text-align: center;
 
   dl {
     dt {
@@ -12,6 +13,7 @@
     }
 
     dd {
+      text-align: left;
       padding-top: 95px;
       font-size: 20px;
       @include center(890px);
@@ -19,6 +21,25 @@
 
       p {
         padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+.en-and-ar {
+  .home-about {
+    dl {
+      dt {
+        position: relative;
+        display: inline-block;
+        background-image: none;
+        background-color: #64a8f3;
+        color: white;
+        font-size: 36px;
+        width: auto;
+        height: auto;
+        padding: 60px 30px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
       }
     }
   }
