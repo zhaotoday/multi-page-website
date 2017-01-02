@@ -8,6 +8,7 @@ $font-color: #c8c4c2;
 // header
 .header {
   @include middle($height);
+  text-align: right;
   top: 0;
   left: 0;
   right: 0;
@@ -16,6 +17,7 @@ $font-color: #c8c4c2;
 
   // logo
   .logo {
+    float: left;
     background-image: url("../../../images/logo.png");
     width: 393px;
     height: 54px;
@@ -24,6 +26,7 @@ $font-color: #c8c4c2;
 
   // 导航栏
   .nav {
+    float: left;
     margin-left: 126px;
 
     li {
@@ -70,6 +73,24 @@ $font-color: #c8c4c2;
 
     a {
       color: $font-color;
+    }
+  }
+}
+
+.ar {
+  .header {
+    text-align: left;
+
+    .logo {
+      float: right;
+    }
+
+    .nav {
+      float: right;
+
+      li {
+        float: right;
+      }
     }
   }
 }

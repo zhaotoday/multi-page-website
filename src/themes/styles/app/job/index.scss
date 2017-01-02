@@ -66,7 +66,7 @@
 
       li {
         @include middle(44px);
-        background: url("../../../images/job/arrow.png") no-repeat 0 16px;
+        background: url("../../../images/job/arrow.png") no-repeat 0 17px;
         text-indent: 15px;
 
         a {
@@ -77,6 +77,33 @@
 
     &.last {
       margin-right: 0;
+    }
+  }
+}
+
+.ar {
+  .job {
+    .job-list {
+      float: right;
+      margin-right: 0;
+      margin-left: 66px;
+
+      dd {
+        li {
+          background-position: 243px 17px;
+        }
+      }
+
+      &.last {
+        margin-left: 0;
+      }
+    }
+
+    h2 {
+      .time {
+        left: 0;
+        right: auto;
+      }
     }
   }
 }

@@ -36,6 +36,7 @@
       }
 
       &.home-page {
+        direction: ltr;
         color: white;
         font-size: 16px;
         background-image: url("../../../images/commodity/buttons/home-page.png");
@@ -166,9 +167,13 @@
           margin-bottom: 80px;
 
           li {
-            img {
-              @include block-img(160px, 160px);
-              margin-right: 20px;
+            &.game-icon {
+              float: left;
+
+              img {
+                @include block-img(160px, 160px);
+                margin-right: 20px;
+              }
             }
 
             h2 {
@@ -201,20 +206,52 @@
 
 .en,
 .ar {
-  .more {
-    dl {
-      dt {
-        position: relative;
-        display: inline-block;
-        background-image: none;
-        background-color: #64a8f3;
-        color: white;
-        font-size: 30px;
-        width: auto;
-        height: auto;
-        padding: 25px 35px;
-        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  .commodity {
+    .more {
+      dl {
+        dt {
+          position: relative;
+          display: inline-block;
+          background-image: none;
+          background-color: #64a8f3;
+          color: white;
+          font-size: 30px;
+          width: auto;
+          height: auto;
+          padding: 25px 35px;
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+        }
       }
+    }
+  }
+}
+
+.ar {
+  .commodity {
+    .more {
+      dl {
+        dd {
+          li {
+            text-align: right;
+
+            &.game-icon {
+              float: right;
+
+              img {
+                margin-left: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.ar {
+  .commodity {
+    .commodity-images {
+      direction: ltr;
     }
   }
 }
