@@ -2,6 +2,7 @@
 
 .job {
   @include center(1200px);
+  overflow: hidden;
   padding-bottom: 300px;
 
   .banner {
@@ -41,42 +42,48 @@
     }
   }
 
-  .job-list {
-    width: 250px;
-    float: left;
-    margin-right: 66px;
+  .job-list-wrap {
+    width: 1266px;
+    margin-left: -66px;
+    display: flex;
 
-    dt {
-      font-size: 24px;
-      @include middle(50px);
-      border-bottom: 1px solid #dddddd;
+    .job-list {
+      flex: 1;
+      width: 250px;
+      margin-left: 66px;
 
-      span {
-        display: inline-block;
-        padding-right: 5px;
-        height: 50px;
-        border-bottom: 3px solid #2a8fff;
-        position: relative;
-        bottom: 2px;
-      }
-    }
+      dt {
+        font-size: 24px;
+        @include middle(50px);
+        border-bottom: 1px solid #dddddd;
 
-    dd {
-      padding-top: 15px;
-
-      li {
-        @include middle(44px);
-        background: url("../../../images/job/arrow.png") no-repeat 0 17px;
-        text-indent: 15px;
-
-        a {
-          color: #333333;
+        span {
+          display: inline-block;
+          padding-right: 5px;
+          height: 50px;
+          border-bottom: 3px solid #2a8fff;
+          position: relative;
+          bottom: 2px;
         }
       }
-    }
 
-    &.last {
-      margin-right: 0;
+      dd {
+        padding-top: 15px;
+
+        li {
+          @include middle(44px);
+          background: url("../../../images/job/arrow.png") no-repeat 0 17px;
+          text-indent: 15px;
+
+          a {
+            color: #333333;
+          }
+        }
+      }
+
+      &.last {
+        margin-right: 0;
+      }
     }
   }
 }
@@ -84,13 +91,9 @@
 .ar {
   .job {
     .job-list {
-      float: right;
-      margin-right: 0;
-      margin-left: 66px;
-
       dd {
         li {
-          background-position: 243px 17px;
+          background-position: right 17px;
         }
       }
 
