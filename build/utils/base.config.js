@@ -47,7 +47,7 @@ const config = {
   ],
   resolve: {
     root: __dirname,
-    modulesDirectories: ['src', consts.THEMES, 'node_modules'],
+    modulesDirectories: ['src', 'node_modules'],
     extensions: ['', '.js', '.html', '.scss']
   }
 }
