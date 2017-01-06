@@ -1,22 +1,22 @@
 // 当前 host
 var HOST = window.location.host
 // 开发
-var DEVELOPMENT = 'DEVELOPMENT'
+var DEV = 'DEV'
 // 生产
-var PRODUCTION = 'PRODUCTION'
+var PROD = 'PROD'
 
 // 当前环境
 var ENV = (function () {
   if (HOST === 'localhost:8080') {
-    return DEVELOPMENT
+    return DEV
   } else {
-    return PRODUCTION
+    return PROD
   }
 })()
 
 // 基础地址
 var BASE_URL = (function () {
-  if (ENV === DEVELOPMENT) {
+  if (ENV === DEV) {
     return 'http://localhost:8080'
   } else {
     return 'http://production.com'

@@ -1,0 +1,107 @@
+.home-contact {
+  background: url("../../../images/home/contact/bg.jpg") center no-repeat;
+  height: 761px;
+  text-align: center;
+
+  dl {
+    dt {
+      background-image: url("../../../images/home/contact/title.png");
+      @include center(182px);
+      height: 189px;
+    }
+
+    dd {
+      padding-top: 25px;
+      @include center(1100px);
+      color: white;
+
+      .words {
+        @include center(456px);
+        font-size: 16px;
+        text-align: center;
+        line-height: 180%;
+      }
+
+      .methods {
+        padding-top: 60px;
+        height: 280px;
+
+        li {
+          float: left;
+          width: 366px;
+          text-align: center;
+          background-repeat: no-repeat;
+          background-position: center top;
+          font-size: 20px;
+          line-height: 180%;
+          padding-top: 138px;
+
+          &.address {
+            background-image: url("../../../images/home/contact/address.png");
+          }
+
+          &.email {
+            background-image: url("../../../images/home/contact/email.png");
+          }
+
+          &.tel {
+            background-image: url("../../../images/home/contact/tel.png");
+          }
+        }
+      }
+
+      .btn-join {
+        @include block-link(286px, 84px);
+        line-height: 84px;
+        font-size: 24px;
+        color: #2a8fff;
+        text-align: center;
+        border-radius: 42px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid #2a8fff;
+
+        span {
+          display: inline-block;
+          width: 22px;
+          height: 22px;
+          overflow: hidden;
+          position: relative;
+          top: 3px;
+          background-image: url("../../../images/home/contact/join.png");
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+}
+
+.en,
+.ar {
+  .home-contact {
+    dl {
+      dt {
+        position: relative;
+        display: inline-block;
+        background-image: none;
+        background-color: white;
+        color: #2a8fff;
+        font-size: 36px;
+        width: auto;
+        height: auto;
+        padding: 60px 30px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      dd {
+        .methods {
+          li {
+            &.tel {
+              direction: ltr;
+            }
+          }
+        }
+      }
+    }
+  }
+}

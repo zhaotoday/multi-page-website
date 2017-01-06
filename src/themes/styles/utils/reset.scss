@@ -1,0 +1,24 @@
+@import "node_modules/compass-mixins/lib/compass/reset";
+@import "./vars";
+
+body {
+  font-size: $font-size;
+  background-color: $body-bg-color;
+  min-width: $page-width;
+}
+
+.cn {
+  font-family: $font-family;
+}
+
+.en {
+  font-family: $font-family-en;
+}
+
+.ar {
+  font-family: $font-family-ar;
+}
+
+a {
+  text-decoration: none;
+}
