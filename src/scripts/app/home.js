@@ -1,1 +1,1 @@
-require('styles/app/home/index.scss')
+require('themes/app/home/index.scss')
