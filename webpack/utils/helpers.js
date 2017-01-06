@@ -3,7 +3,7 @@ const consts = require('./consts')
 
 const getEntry = (pages) => {
   const entry = {}
-  const allPages = ['common', ...pages]
+  const allPages = ['commons', ...pages]
 
   allPages.map((page) => {
     entry[page] = `./${consts.SRC}${consts.SCRIPTS}${page}.js`
