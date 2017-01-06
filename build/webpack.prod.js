@@ -1,4 +1,4 @@
-const config = require('./utils/config')
+const config = require('./utils/base.config')
 const webpack = require('webpack')
 const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin
 

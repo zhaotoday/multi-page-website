@@ -1,1 +1,1 @@
-module.exports = require(`./${process.env.NODE_ENV}`)
+module.exports = require(`./webpack.${process.env.NODE_ENV === 'development' ? 'dev' : 'prod'}`)
