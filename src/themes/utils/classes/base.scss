@@ -1,4 +1,4 @@
-@import "./vars";
+@import "./../vars";
 
 // 定宽居中
 .fix-center {
@@ -29,10 +29,6 @@
 
 .block {
   display: block;
-}
-
-.inline-block {
-  display: inline-block;
 }
 
 .float-l {

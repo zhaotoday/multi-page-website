@@ -5,13 +5,13 @@
   <meta name="keywords" content="">
   <meta name="description" content="">
   <title></title>
-  <link href="themes/app/commons.css" rel="stylesheet">
+  ${require('../commons/head.html')}
   <link href="themes/app/home.css" rel="stylesheet">
 </head>
 <body>
-${require('./commons/header.html')}
-<div class="main"></div>
-${require('./commons/footer.html')}
+${require('../commons/header.html')}
+${require('./slider.html')}
+${require('../commons/footer.html')}
 <script src="scripts/app/commons.js"></script>
 <script src="scripts/app/home.js"></script>
 </body>
