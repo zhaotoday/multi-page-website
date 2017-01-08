@@ -8,11 +8,10 @@
 }
 
 /**
- * 水平居中
+ * 块级元素水平居中
  * @param $width {string} 宽度
  */
-@mixin center($width) {
-  width: $width;
+@mixin block-center() {
   margin-left: auto;
   margin-right: auto;
 }
