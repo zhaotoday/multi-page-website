@@ -1,3 +1,5 @@
+@import "../../../utils/mixins";
+
 .home-about {
   background-color: red;
   height: 693px;
@@ -21,7 +23,7 @@
       text-align: left;
       padding-top: 95px;
       font-size: 20px;
-      @include center(890px);
+      @include block-center();
       line-height: 180%;
 
       p {
