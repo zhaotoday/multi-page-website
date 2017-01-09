@@ -33,16 +33,16 @@
     top: px2rem(-30px);
 
     li {
-      background-image: url("./images/index.png");
-      background-size: 100% 100%;
-      width: px2rem(8px);
-      height: px2rem(8px);
+      background-color: green;
+      border-radius: px2rem(6px);
+      width: px2rem(12px);
+      height: px2rem(12px);
       cursor: pointer;
       display: inline-flex;
 
       &.active {
-        background-image: url("./images/index-active.png");
-        width: px2rem(20px);
+        background-color: red;
+        width: px2rem(24px);
       }
     }
   }
