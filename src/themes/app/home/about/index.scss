@@ -1,0 +1,32 @@
+.home-about {
+  background-color: red;
+  height: 693px;
+  text-align: center;
+
+  dl {
+    dt {
+
+      width: 184px;
+      height: 192px;
+      @include block-center();
+      position: relative;
+      display: inline-block;
+      background-color: #64a8f3;
+      color: white;
+      font-size: 36px;
+      padding: 60px 30px;
+    }
+
+    dd {
+      text-align: left;
+      padding-top: 95px;
+      font-size: 20px;
+      @include center(890px);
+      line-height: 180%;
+
+      p {
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
