@@ -1,6 +1,10 @@
 @import "../../../utils/mixins";
 @import "../../../utils/functions";
 
+%inline-block {
+  display: inline-block;
+}
+
 .home-slider {
   height: px2rem(300px);
   overflow: hidden;
@@ -23,26 +27,28 @@
   }
 
   .slider-indexes {
-    display: inline-block;
+    @extend %inline-block;
     position: relative;
-    padding: px2rem(4px) px2rem(16px);
+    padding: px2rem(5px) px2rem(20px);
     line-height: 0;
     overflow: hidden;
     border-radius: px2rem(10px);
     background-color: rgba(0, 0, 0, .6);
-    top: px2rem(-30px);
+    top: px2rem(-40px);
 
     li {
-      background-color: green;
-      border-radius: px2rem(6px);
+      background-color: #9c9391;
       width: px2rem(12px);
       height: px2rem(12px);
+      border-radius: px2rem(6px);
       cursor: pointer;
-      display: inline-flex;
+      @extend %inline-block;
+      margin-left: px2rem(2px);
+      margin-right: px2rem(2px);
 
       &.active {
-        background-color: red;
-        width: px2rem(24px);
+        background-color: #2a8fff;
+        width: px2rem(30px);
       }
     }
   }

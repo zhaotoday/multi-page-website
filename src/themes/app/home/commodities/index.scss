@@ -1,0 +1,101 @@
+@import "../../../utils/functions";
+@import "../../../utils/mixins";
+@import "../../../utils/classes/fonts";
+
+.home-commodities {
+  background-color: #60a9f5;
+  height: px2rem(830px);
+  text-align: center;
+
+  .nav {
+    display: none;
+  }
+
+  dl {
+    dt {
+      display: inline-block;
+      background-color: white;
+      color: #2a8fff;
+      @extend .font-25;
+      padding: px2rem(26px);
+    }
+
+    dd {
+      .slider-images-wrap {
+        padding-top: px2rem(60px);
+
+        .slider-images {
+          li {
+            overflow: hidden;
+            width: 388px;
+            float: left;
+            color: white;
+            text-align: center;
+
+            img {
+              @include block-img(218px, 218px);
+              margin-left: auto;
+              margin-right: auto;
+            }
+
+            h2 {
+              @extend .font-20;
+              padding-top: 15px;
+              padding-bottom: 23px;
+            }
+
+            p {
+              @extend .font-12;
+              width: px2rem(584px);
+              @include block-center();
+              height: 143px;
+              line-height: 160%;
+            }
+
+            .btn-view {
+              @include block-link(185px, 60px);
+              margin-left: auto;
+              margin-right: auto;
+              text-align: center;
+              line-height: 60px;
+              font-size: 18px;
+              color: white;
+              border-radius: 30px;
+              border: 1px solid white;
+            }
+          }
+        }
+      }
+
+      .slider-dir {
+        li {
+          position: absolute;
+          width: px2rem(40px);
+          height: px2rem(75px);
+          background-size: 100% 100%;
+          top: 230px;
+
+          &.slider-left {
+            background-image: url("./images/slider/left.png");
+            left: 50%;
+            margin-left: -620px;
+
+            &.disabled {
+              background-image: url("./images/slider/left-disabled.png");
+            }
+          }
+
+          &.slider-right {
+            background-image: url("./images/slider/right.png");
+            right: 50%;
+            margin-right: -620px;
+
+            &.disabled {
+              background-image: url("./images/slider/right-disabled.png");
+            }
+          }
+        }
+      }
+    }
+  }
+}

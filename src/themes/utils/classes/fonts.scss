@@ -1,23 +1,23 @@
 @import "../vars";
 
-@for $i from 1 through length($fonts) {
+@for $i from 12 through 25 {
   .font-#{$i} {
-    font-size: nth($fonts, $i);
+    font-size: $i * 1px;
   }
 }
 
 [data-dpr="2"] {
-  @for $i from 1 through length($fonts) {
+  @for $i from 12 through 25 {
     .font-#{$i} {
-      font-size: nth($fonts, $i) * 2;
+      font-size: $i * 2px;
     }
   }
 }
 
 [data-dpr="3"] {
-  @for $i from 1 through length($fonts) {
+  @for $i from 12 through 25 {
     .font-#{$i} {
-      font-size: nth($fonts, $i) * 3;
+      font-size: $i * 3px;
     }
   }
 }
