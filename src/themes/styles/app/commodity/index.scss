@@ -22,17 +22,33 @@
       display: inline-block;
       margin-left: 8px;
       margin-right: 8px;
+      width: 173px;
       height: 50px;
       overflow: hidden;
+      background-size: 100% 100%;
 
       &.app-store {
-        background-image: url("../../../images/commodity/buttons/app-store.png");
-        width: 169px;
+        background-image: url("../../../images/commodity/buttons/app-store-cn.svg");
+
+        &-ar {
+          background-image: url("../../../images/commodity/buttons/app-store-ar.svg");
+        }
+
+        &-en {
+          background-image: url("../../../images/commodity/buttons/app-store-en.svg");
+        }
       }
 
       &.google-play {
-        background-image: url("../../../images/commodity/buttons/google-play.png");
-        width: 169px;
+        background-image: url("../../../images/commodity/buttons/google-play-cn.png");
+
+        &-ar{
+          background-image: url("../../../images/commodity/buttons/google-play-ar.png");
+        }
+
+        &-en {
+          background-image: url("../../../images/commodity/buttons/google-play-en.png");
+        }
       }
 
       &.home-page {
@@ -40,9 +56,8 @@
         color: white;
         font-size: 16px;
         background-image: url("../../../images/commodity/buttons/home-page.png");
-        width: 173px;
         line-height: 50px;
-        text-indent: 30px;
+        text-indent: 34px;
       }
     }
   }
