@@ -1,18 +1,22 @@
 @import "../../../utils/mixins";
 @import "../../../utils/functions";
 
+%height {
+  height: px2rem(320px);
+}
+
 %inline-block {
   display: inline-block;
 }
 
 .home-slider {
-  height: px2rem(300px);
+  @extend %height;
   overflow: hidden;
   text-align: center;
 
   .slider-images {
     position: relative;
-    height: px2rem(300px);
+    @extend %height;
     overflow: hidden;
 
     li {
@@ -21,7 +25,7 @@
       img {
         display: block;
         width: px2rem(720px);
-        height: px2rem(300px);
+        @extend %height;
       }
     }
   }
