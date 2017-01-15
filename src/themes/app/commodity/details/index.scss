@@ -1,0 +1,56 @@
+.commodity {
+  .icon {
+    @include block-img(184px, 184px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 52px;
+  }
+
+  .title {
+    font-size: 40px;
+    padding-top: 25px;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+
+  .actions {
+    text-align: center;
+
+    a {
+      display: inline-block;
+      margin-left: 8px;
+      margin-right: 8px;
+      height: 50px;
+      overflow: hidden;
+
+      &.app-store {
+        background-image: url("../../../images/commodity/buttons/app-store.png");
+        width: 169px;
+      }
+
+      &.google-play {
+        background-image: url("../../../images/commodity/buttons/google-play.png");
+        width: 169px;
+      }
+
+      &.home-page {
+        direction: ltr;
+        color: white;
+        font-size: 16px;
+        background-image: url("../../../images/commodity/buttons/home-page.png");
+        width: 173px;
+        line-height: 50px;
+        text-indent: 30px;
+      }
+    }
+  }
+
+  .content {
+    @include center(996px);
+    line-height: 180%;
+    padding-top: 46px;
+    padding-bottom: 46px;
+    color: #666666;
+    font-size: 16px;
+  }
+}
