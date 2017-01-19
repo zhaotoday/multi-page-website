@@ -20,7 +20,7 @@ const config = {
         loader: 'html?interpolate&minimize=false'
       },
       {
-        test: /\.(png|jpg)$/,
+        test: /\.(png|jpg|svg)$/,
         loader: 'url?limit=8192&name=themes/images/[hash].[ext]'
       }
     ]

@@ -1,3 +1,5 @@
+@import "../../../utils/mixins";
+
 .commodity {
   .icon {
     @include block-img(184px, 184px);
@@ -20,33 +22,49 @@
       display: inline-block;
       margin-left: 8px;
       margin-right: 8px;
+      width: 173px;
       height: 50px;
       overflow: hidden;
+      background-size: 100% 100%;
 
       &.app-store {
-        background-image: url("../../../images/commodity/buttons/app-store.png");
-        width: 169px;
+        background-image: url("./images/buttons/app-store-cn.svg");
+
+        &-ar {
+          background-image: url("./images/buttons/app-store-ar.svg");
+        }
+
+        &-en {
+          background-image: url("./images/buttons/app-store-en.svg");
+        }
       }
 
       &.google-play {
-        background-image: url("../../../images/commodity/buttons/google-play.png");
-        width: 169px;
+        background-image: url("./images/buttons/google-play-cn.png");
+
+        &-ar {
+          background-image: url("./images/buttons/google-play-ar.png");
+        }
+
+        &-en {
+          background-image: url("./images/buttons/google-play-en.png");
+        }
       }
 
       &.home-page {
         direction: ltr;
         color: white;
         font-size: 16px;
-        background-image: url("../../../images/commodity/buttons/home-page.png");
-        width: 173px;
+        background-image: url("./images/buttons/home-page.png");
         line-height: 50px;
-        text-indent: 30px;
+        text-indent: 34px;
       }
     }
   }
 
   .content {
-    @include center(996px);
+    @include block-center();
+    width: 996px;
     line-height: 180%;
     padding-top: 46px;
     padding-bottom: 46px;
