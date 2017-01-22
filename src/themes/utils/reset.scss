@@ -7,6 +7,6 @@ body {
   background-color: $body-bg-color;
 }
 
-a {
+a, a:hover, a:active {
   text-decoration: none;
 }
