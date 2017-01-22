@@ -1,17 +1,18 @@
 @import "../../../utils/mixins";
+@import "../../../utils/functions";
+@import "../../../utils/classes/fonts";
 
 .commodity {
   .icon {
-    @include block-img(184px, 184px);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 52px;
+    @include block-img(px2rem(184px), px2rem(184px));
+    @include block-center();
+    margin-top: px2rem(80px);
   }
 
   .title {
-    font-size: 40px;
-    padding-top: 25px;
-    padding-bottom: 60px;
+    @extend .font-20;
+    padding-top: px2rem(28px);
+    padding-bottom: px2rem(60px);
     text-align: center;
   }
 
@@ -20,10 +21,10 @@
 
     a {
       display: inline-block;
-      margin-left: 8px;
-      margin-right: 8px;
-      width: 173px;
-      height: 50px;
+      margin-left: px2rem(5px);
+      margin-right: px2rem(5px);
+      width: px2rem(200px);
+      height: px2rem(64px);
       overflow: hidden;
       background-size: 100% 100%;
 
@@ -54,21 +55,19 @@
       &.home-page {
         direction: ltr;
         color: white;
-        font-size: 16px;
+        font-size: px2rem(20px);
         background-image: url("./images/buttons/home-page.png");
-        line-height: 50px;
-        text-indent: 34px;
+        line-height: px2rem(64px);
+        text-indent: px2rem(36px);
       }
     }
   }
 
   .content {
     @include block-center();
-    width: 996px;
     line-height: 180%;
-    padding-top: 46px;
-    padding-bottom: 46px;
+    padding: px2rem(36px);
     color: #666666;
-    font-size: 16px;
+    @extend .font-12;
   }
 }
