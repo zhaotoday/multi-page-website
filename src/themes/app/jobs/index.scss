@@ -3,6 +3,8 @@
 @import "../../utils/classes/fonts";
 
 .jobs {
+  margin-bottom: px2rem(100px);
+
   dl {
     width: px2rem(672px);
     @include block-center();
