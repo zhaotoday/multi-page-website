@@ -7,7 +7,7 @@
     width: px2rem(672px);
     @include block-center();
     padding-top: px2rem(10px);
-    padding-bottom: px2rem(20px);
+    padding-bottom: px2rem(50px);
 
     dt {
       @extend .font-18;
