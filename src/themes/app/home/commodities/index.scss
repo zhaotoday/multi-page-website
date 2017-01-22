@@ -79,20 +79,20 @@
           top: px2rem(140px);
 
           &.slider-left {
-            background-image: url("./images/slider/left.png");
+            background-image: url("../../commons/global/images/slider/left.png");
             left: px2rem(24px);
 
             &.disabled {
-              background-image: url("./images/slider/left-disabled.png");
+              background-image: url("../../commons/global/images/slider/left-disabled.png");
             }
           }
 
           &.slider-right {
-            background-image: url("./images/slider/right.png");
+            background-image: url("../../commons/global/images/slider/right.png");
             right: px2rem(24px);
 
             &.disabled {
-              background-image: url("./images/slider/right-disabled.png");
+              background-image: url("../../commons/global/images/slider/right-disabled.png");
             }
           }
         }
