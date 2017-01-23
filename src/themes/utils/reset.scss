@@ -1,10 +1,12 @@
 @import "node_modules/compass-mixins/lib/compass/reset";
 @import "./vars";
+@import "./functions";
 
 body {
   font-family: $font-family-m;
   font-size: $font-size;
   background-color: $body-bg-color;
+  max-width: px2rem(720px);
 }
 
 a, a:hover, a:active {

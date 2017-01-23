@@ -21,7 +21,7 @@
     dd {
       width: px2rem(640px);
       @include block-center();
-      @extend .font-13;
+      @extend .font-12;
       line-height: 180%;
       padding-top: px2rem(60px);
       text-align: left;
