@@ -24,6 +24,7 @@
 
       .methods {
         margin-left: px2rem(60px);
+
         li {
           color: white;
           box-sizing: border-box;
@@ -73,6 +74,26 @@
           background-image: url("./images/join.png");
           background-size: 100% 100%;
           background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+}
+
+.ar {
+  .home-contact {
+    dl {
+      dd {
+        .methods {
+          margin-left: auto;
+          margin-right: px2rem(60px);
+
+          li {
+            padding-left: 0;
+            padding-right: px2rem(138px);
+            background-position: right 0;
+            text-align: right;
+          }
         }
       }
     }

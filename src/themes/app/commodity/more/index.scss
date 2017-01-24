@@ -64,3 +64,30 @@
     }
   }
 }
+
+.ar {
+  .commodity {
+    .more {
+      .game {
+        text-align: right;
+
+        li {
+          &.game-icon {
+            float: right;
+
+            img {
+              @include block-img(px2rem(120px), px2rem(120px));
+              margin-right: auto;
+              margin-left: px2rem(20px);
+            }
+          }
+
+          a {
+            right: auto;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}
