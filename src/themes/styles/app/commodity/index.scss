@@ -27,27 +27,10 @@
       overflow: hidden;
       background-size: 100% 100%;
 
-      &.app-store {
-        background-image: url("../../../images/commodity/buttons/app-store-cn.svg");
-
-        &-ar {
-          background-image: url("../../../images/commodity/buttons/app-store-ar.svg");
-        }
-
-        &-en {
-          background-image: url("../../../images/commodity/buttons/app-store-en.svg");
-        }
-      }
-
+      &.app-store,
       &.google-play {
-        background-image: url("../../../images/commodity/buttons/google-play-cn.png");
-
-        &-ar{
-          background-image: url("../../../images/commodity/buttons/google-play-ar.png");
-        }
-
-        &-en {
-          background-image: url("../../../images/commodity/buttons/google-play-en.png");
+        img {
+          @include block-img(173px, 50px);
         }
       }
 
