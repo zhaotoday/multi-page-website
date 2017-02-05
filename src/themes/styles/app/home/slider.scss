@@ -30,6 +30,28 @@ $height: 800px;
           width: $width;
           height: $height;
         }
+
+        .app-store,
+        .google-play {
+          position: absolute;
+          left: 1560px;
+          width: 173px;
+          height: 50px;
+          border-radius: 5px;
+          overflow: hidden;
+
+          img {
+            @include block-img(173px, 50px);
+          }
+        }
+
+        .app-store {
+          top: 630px;
+        }
+
+        .google-play {
+          top: 700px;
+        }
       }
     }
 
@@ -65,5 +87,10 @@ $height: 800px;
 .ar {
   .ad-slider {
     direction: ltr;
+  }
+
+  .app-store,
+  .google-play {
+    left: 187px !important;
   }
 }
