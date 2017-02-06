@@ -3,10 +3,15 @@
 @import "../../../utils/classes/fonts";
 @import "../../../../assets/animate.css";
 
+body {
+  padding-top: px2rem(102px);
+}
+
 header {
   width: 100%;
-  border-bottom: 1px solid #f8fafc;
+  border-bottom: 1px solid #ddd;
   position: fixed;
+  top: 0;
   z-index: 999;
   height: px2rem(102px);
   background-color: white;
@@ -30,24 +35,6 @@ header {
     margin-right: px2rem(18px);
     margin-top: px2rem(33px);
   }
-
-  .nav {
-    height: px2rem(90px);
-    background-color: #4c4c4c;
-    display: none;
-
-    li {
-      flex: 1;
-
-      a {
-        @include block-link(100%, px2rem(90px));
-        line-height: px2rem(90px);
-        text-align: center;
-        color: #d4d4d4;
-        @extend .font-12;
-      }
-    }
-  }
 }
 
 .nav-overlay {
@@ -70,5 +57,39 @@ header {
     position: absolute;
     right: px2rem(15px);
     top: px2rem(26px);
+  }
+
+  .nav {
+    padding-top: px2rem(80px);
+
+    li {
+      a {
+        @include block-link(100%, px2rem(80px));
+        line-height: px2rem(80px);
+        text-align: center;
+        color: #d4d4d4;
+        @extend .font-14;
+      }
+    }
+  }
+
+  .lang {
+    padding-top: px2rem(60px);
+
+    li {
+      a {
+        @include block-link(100%, px2rem(70px));
+        line-height: px2rem(70px);
+        text-align: center;
+        color: #d4d4d4;
+        @extend .font-13;
+      }
+
+      &.active {
+        a {
+          color: #f7941e;
+        }
+      }
+    }
   }
 }

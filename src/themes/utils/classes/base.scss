@@ -1,4 +1,5 @@
 @import "./../vars";
+@import "./../functions";
 
 // 定宽居中
 .fix-center {
@@ -51,7 +52,10 @@
 }
 
 .nav-hash {
-  visibility: hidden;
+  display: block;
+  height: 0px;
+  position: relative;
+  top: px2rem(-102px);
 }
 
 .body-padding {

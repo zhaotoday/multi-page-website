@@ -7,6 +7,6 @@ $('#collapse').on('tap', function () {
   $('#nav-overlay').show().removeClass('fadeOutRight').addClass('fadeInRight')
 })
 
-$('#nav-close').on('tap', function () {
+$('#nav-close, #nav li a, #lang li a').on('tap', function () {
   $('#nav-overlay').show().removeClass('fadeInRight').addClass('fadeOutRight')
 })
