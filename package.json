@@ -65,6 +65,8 @@
     "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
-    "compass-mixins": "^0.12.10"
+    "animate.css": "^3.5.2",
+    "compass-mixins": "^0.12.10",
+    "zepto": "^1.2.0"
   }
 }
