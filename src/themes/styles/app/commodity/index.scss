@@ -34,8 +34,6 @@
       }
 
       &.home-page {
-        position: relative;
-        top: -19px\9;
         direction: ltr;
         color: white;
         font-size: 16px;
@@ -65,6 +63,7 @@
     }
 
     .slider-wrap {
+      position: relative;
       @include center(1000px);
       height: 562px;
       overflow: hidden;

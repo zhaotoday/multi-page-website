@@ -1,6 +1,11 @@
 @import "node_modules/compass-mixins/lib/compass/reset";
 @import "./vars";
 
+@font-face {
+  font-family: "NotoKufiArabic";
+  src: url("http://www.gltornado.com/fonts/NotoKufiArabic-Regular.ttf") format("truetype");
+}
+
 body {
   font-size: $font-size;
   background-color: $body-bg-color;
@@ -16,7 +21,7 @@ body {
 }
 
 .ar {
-  font-family: $font-family-ar;
+  font-family: "NotoKufiArabic";
 }
 
 a {
