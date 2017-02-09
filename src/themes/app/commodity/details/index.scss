@@ -25,6 +25,8 @@
       margin-right: px2rem(5px);
       width: px2rem(200px);
       height: px2rem(64px);
+      line-height: px2rem(64px);
+      font-size: px2rem(20px);
       overflow: hidden;
       background-size: 100% 100%;
 
@@ -55,9 +57,7 @@
       &.home-page {
         direction: ltr;
         color: white;
-        font-size: px2rem(20px);
         background-image: url("./images/buttons/home-page.png");
-        line-height: px2rem(64px);
         text-indent: px2rem(36px);
       }
     }
