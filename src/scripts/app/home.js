@@ -8,7 +8,7 @@ $('#nav').find('li:first-child').addClass('active').end().onePageNav({
   scrollSpeed: 300
 })
 
-$('#ad').slider({
+$('#home-slider').slider({
   contentCls: 'slider-images',
   navCls: 'slider-indexes',
   auto: true,

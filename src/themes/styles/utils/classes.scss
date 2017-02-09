@@ -55,9 +55,11 @@
 }
 
 .nav-hash {
-  position: absolute;
+  display: block;
+  position: relative;
   top: -80px;
-  visibility: hidden;
+  height: 0;
+  overflow: hidden;
 }
 
 .body-padding {
