@@ -36,6 +36,10 @@
           h2 {
             @extend .font-16;
             padding-top: px2rem(5px);
+            width: px2rem(350px);
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
           }
 
           p {
