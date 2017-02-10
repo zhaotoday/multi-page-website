@@ -25,11 +25,21 @@
       .methods {
         padding-top: 60px;
         height: 280px;
-        display: flex;
+
+        &.col-3 {
+          li {
+            width: 366px;
+          }
+        }
+
+        &.col-2 {
+          li {
+            width: 549px;
+          }
+        }
 
         li {
-          flex: 1;
-          width: 366px;
+          float: left;
           text-align: center;
           background-repeat: no-repeat;
           background-position: center top;
