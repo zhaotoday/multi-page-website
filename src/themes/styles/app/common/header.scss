@@ -5,6 +5,72 @@ $height: 80px;
 $nav-active-color: #298eff;
 $font-color: #c8c4c2;
 
+@keyframes scaled-down-1 {
+  from {
+    height: 80px;
+    line-height: 80px;
+  }
+  to {
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
+@keyframes scaled-down-2 {
+  from {
+    margin-top: 13px;
+  }
+  to {
+    margin-top: 3px;
+  }
+}
+
+@keyframes scaled-down-3 {
+  from {
+    height: 80px;
+  }
+  to {
+    height: 60px;
+  }
+}
+
+@keyframes scaled-down-4 {
+  from {
+    padding-top: 20px;
+  }
+  to {
+    height: 60px;
+  }
+}
+
+@keyframes scaled-up-1 {
+  from {
+    height: 60px;
+    line-height: 60px;
+  }
+  to {
+    height: 80px;
+    line-height: 80px;
+  }
+}
+
+@keyframes scaled-up-2 {
+  from {
+    margin-top: 3px;
+  }
+  to {
+    margin-top: 13px;
+  }
+}
+
+@keyframes scaled-up-3 {
+  from {
+    height: 60px;
+  }
+  to {
+    height: 80px;
+  }
+}
 // header
 .header {
   @include middle($height);
@@ -17,6 +83,16 @@ $font-color: #c8c4c2;
   background-color: black\9;
   filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70)\9;
 
+  &.scaled-down {
+    animation: scaled-down-3 .5s;
+    animation-fill-mode: forwards;
+  }
+
+  &.scaled-up {
+    animation: scaled-up-3 .5s;
+    animation-fill-mode: forwards;
+  }
+
   // logo
   .logo {
     float: left;
@@ -24,6 +100,16 @@ $font-color: #c8c4c2;
     width: 393px;
     height: 54px;
     margin-top: 13px;
+
+    &.scaled-down {
+      animation: scaled-down-2 .5s;
+      animation-fill-mode: forwards;
+    }
+
+    &.scaled-up {
+      animation: scaled-up-2 .5s;
+      animation-fill-mode: forwards;
+    }
   }
 
   // 导航栏
@@ -35,6 +121,16 @@ $font-color: #c8c4c2;
     li {
       float: left;
 
+      &.scaled-down {
+        animation: scaled-down-1 .5s;
+        animation-fill-mode: forwards;
+      }
+
+      &.scaled-up {
+        animation: scaled-up-1 .5s;
+        animation-fill-mode: forwards;
+      }
+
       // 导航菜单
       a {
         box-sizing: border-box;
@@ -45,6 +141,16 @@ $font-color: #c8c4c2;
         @include middle($height);
         margin-right: 30px;
         color: $font-color;
+
+        &.scaled-down {
+          animation: scaled-down-1 .5s;
+          animation-fill-mode: forwards;
+        }
+
+        &.scaled-up {
+          animation: scaled-up-1 .5s;
+          animation-fill-mode: forwards;
+        }
       }
 
       // 导航菜单激活状态
