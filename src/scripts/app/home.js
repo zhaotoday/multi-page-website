@@ -31,22 +31,3 @@ $('#commodity').slider({
   delay: 2500,
   duration: 700
 })
-
-var scrollTimer
-var init = false
-
-$(window).scroll(function () {
-  clearTimeout(scrollTimer)
-
-  scrollTimer = setTimeout(function () {
-    if (init) {
-      if ($(this).scrollTop() === 0) {
-        $('.logo, .nav li, .nav a, .header').removeClass('scaled-down').addClass('scaled-up')
-      } else {
-        $('.logo, .nav li, .nav a, .header').removeClass('scaled-up').addClass('scaled-down')
-      }
-    }
-
-    init = true
-  }, 100)
-})

@@ -28,9 +28,11 @@ $font-color: #c8c4c2;
 @keyframes scaled-down-3 {
   from {
     height: 80px;
+    line-height: 80px;
   }
   to {
     height: 60px;
+    line-height: 60px;
   }
 }
 
@@ -39,7 +41,7 @@ $font-color: #c8c4c2;
     padding-top: 20px;
   }
   to {
-    height: 60px;
+    padding-top: 10px;
   }
 }
 
@@ -66,11 +68,23 @@ $font-color: #c8c4c2;
 @keyframes scaled-up-3 {
   from {
     height: 60px;
+    line-height: 60px;
   }
   to {
     height: 80px;
+    line-height: 80px;
   }
 }
+
+@keyframes scaled-down-4 {
+  from {
+    padding-top: 10px;
+  }
+  to {
+    padding-top: 20px;
+  }
+}
+
 // header
 .header {
   @include middle($height);
