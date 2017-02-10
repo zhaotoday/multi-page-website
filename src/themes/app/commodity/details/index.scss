@@ -18,11 +18,13 @@
 
   .actions {
     text-align: center;
+    display: flex;
 
     a {
-      display: inline-block;
-      margin-left: px2rem(5px);
-      margin-right: px2rem(5px);
+      flex: 1;
+      display: block;
+      margin-left: px2rem(8px);
+      margin-right: px2rem(8px);
       width: px2rem(200px);
       height: px2rem(64px);
       line-height: px2rem(64px);
@@ -32,6 +34,8 @@
 
       &.app-store {
         background-image: url("./images/buttons/app-store-cn.svg");
+        margin-left: 0;
+        margin-right: 0;
 
         &-ar {
           background-image: url("./images/buttons/app-store-ar.svg");
