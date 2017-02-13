@@ -7,6 +7,17 @@ $('#collapse').on('tap', function () {
   $('#nav-overlay').show().removeClass('fadeOutRight').addClass('fadeInRight')
 })
 
-$('#nav-close, #nav li a, #lang li a').on('tap', function () {
+function hideOverlay() {
   $('#nav-overlay').show().removeClass('fadeInRight').addClass('fadeOutRight')
+}
+
+$('#nav-close, #lang li a').on('tap', function () {
+  hideOverlay()
+})
+
+$('#nav li').eq(0).addClass('active')
+
+$('#nav li a').on('tap', function () {
+  hideOverlay()
+  $(this).parent().addClass('active').siblings().removeClass('active')
 })

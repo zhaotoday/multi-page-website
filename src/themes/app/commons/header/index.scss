@@ -63,6 +63,22 @@ header {
     padding-top: px2rem(80px);
 
     li {
+      position: relative;
+
+      &.active:before {
+        content: "";
+        display: block;
+        width: px2rem(9px);
+        height: px2rem(9px);
+        background: #fa931c;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: px2rem(-6px);
+        margin-top: px2rem(20px);
+      }
+
       a {
         @include block-link(100%, px2rem(80px));
         line-height: px2rem(80px);
