@@ -1,2 +1,2 @@
 Deprecated!  
-Please see the new version: https://github.com/zhaotoday/website-by-webpack .
+Please visit: https://github.com/zhaotoday/webpack-website .
